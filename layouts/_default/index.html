@@ -1,0 +1,89 @@
+{{ define "main" }}
+  {{ $isntDefault := not (or (eq (trim $.Site.Params.contentTypeName " ") "posts") (eq (trim $.Site.Params.contentTypeName " ") "")) }}
+  {{ $contentTypeName := cond $isntDefault (string $.Site.Params.contentTypeName) "posts" }}
+
+  {{ $PageContext := . }}
+  {{ if .IsHome }}
+    {{ $PageContext = .Site }}
+  {{ end }}
+  {{ $paginator := .Paginate (where $PageContext.RegularPages "Type" $contentTypeName) }}
+
+  {{ if .Content }}
+    <div class="index-content {{ if .Params.framed -}}framed{{- end -}}">
+      {{ .Content }}
+    </div>
+  {{ end }}
+
+    <style>
+      .post-dot {
+      width: 10px;
+    height: 10px;
+    background: red;
+    display: inline-block;
+    border: 50%;
+    border-radius: 50%;
+      }
+    </style>
+  <div class="posts">
+    {{ range $paginator.Pages }}
+    <div class="post on-list">
+      <div class="post-title">
+        <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+      </div>
+      <span class="post-date">
+        {{ .Date.Format ($.Site.Params.DateFormatList | default "2020-01-02") }}
+      </span>
+      {{ if .Params.tags }}
+        <span class="post-tags">
+          {{ range .Params.tags }}
+            <a href="{{ (urlize (printf "tags/%s" . )) | absURL }}/">#{{ . }}</a>&nbsp;
+          {{ end }}
+        </span>
+      {{ end }}
+
+      <div class="post-meta">
+        {{ if $.Site.Params.ShowReadingTime }}
+          <span class="post-read-time"> {{ .ReadingTime }} {{ $.Site.Params.MinuteReadingTime | default "min read" }}</span>
+        {{ end }}
+      </div>
+
+<!--      {{ if .Params.tags }}-->
+<!--        <span class="post-tags">-->
+<!--          {{ range .Params.tags }}-->
+<!--            <a href="{{ (urlize (printf "tags/%s" . )) | absURL }}/">#{{ . }}</a>&nbsp;-->
+<!--          {{ end }}-->
+<!--        </span>-->
+<!--      {{ end }}-->
+
+      <!-- {{ if .Params.Cover }} -->
+      <!--   <figure class="post-cover"> -->
+      <!--     {{ if .Params.UseRelativeCover }} -->
+      <!--     <div>this is use Relative cover</div> -->
+      <!--       <img src="{{ (printf "%s%s" .Permalink .Params.Cover ) }}" alt="{{ .Params.CoverAlt | plainify | default .Title }}"/> -->
+      <!--     {{ else }} -->
+      <!--       <img src="{{ .Params.Cover | absURL }}" alt="{{ .Params.CoverAlt | plainify | default .Title }}"/> -->
+      <!--     {{ end }} -->
+
+      <!--     {{ if .Params.CoverCaption }} -->
+      <!--       <figcaption class="center">{{ .Params.CoverCaption | markdownify }}</figcaption> -->
+      <!--     {{ end }} -->
+      <!--   </figure> -->
+      <!-- {{ end }} -->
+
+      <div class="post-content">
+        {{ with .Description }}
+          {{ . | markdownify }}
+        {{ else }}
+          {{ if .Truncated }}
+            {{ .Summary }}
+          {{ end }}
+        {{ end }}
+      </div>
+<!--      {{ if not .Params.hideReadMore }}-->
+<!--        <div><a class="read-more button" href="{{.RelPermalink}}">{{ $.Site.Params.ReadMore | default "Read more 33" }} →</a></div>-->
+<!--      {{ end }}-->
+    </div>
+    {{ end }}
+    {{ partial "pagination.html" . }}
+  </div>
+{{ end }}

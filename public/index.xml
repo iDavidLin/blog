@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>David</title>
+    <link>http://dlin.me/</link>
+    <description>Recent content on David</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://dlin.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Blog</title>
+      <link>http://dlin.me/posts/my-first-blog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://dlin.me/posts/my-first-blog/</guid>
+      <description>testing testing</description>
+    </item>
+    
+    <item>
+      <title>My first blog</title>
+      <link>http://dlin.me/my-first-post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://dlin.me/my-first-post/</guid>
+      <description>testing testing</description>
+    </item>
+    
+  </channel>
+</rss>
