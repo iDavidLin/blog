@@ -1,21 +1,14 @@
 +++
-title = "About"
+title = "About Me"
 date = "2019-01-25"
-author = "Radek"
 +++
 
-# Hi there
+Hi I am David
 
-My name is Radek and I'm the author of this theme. I made it to help you present your ideas easier.
+A full-stack software engineer with over 6 years experience in front-end, iOS and back-end.  
+An enthusiast of continuous integration and agile environments.   
 
-We all know how hard is to start something on the web, especially these days. You need to prepare a bunch of stuff, configure them and when that’s done — create the content.
+Highly motivated with a willingness to learn and a proven track record of rapidly developing creative software with new technologies. Flexible and proactive worker with excellent organisational skills and great attention to details.  
 
-This theme is pretty basic and covers all of the essentials. All you have to do is start typing!
+Work-driven, thrives on challenge and works well in a high-pressure environment.
 
-The theme includes:
-
-- **light/dark mode**, depending on your preferences
-- great reading experience thanks to [**Inter UI font**](https://rsms.me/inter/), made by [Rasmus Andersson](https://rsms.me/about/)
-- nice code highlighting thanks to [**PrismJS**](https://prismjs.com)
-
-So, there you have it... enjoy!
