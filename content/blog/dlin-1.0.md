@@ -7,7 +7,7 @@ date: 2023-06-04
 
 ## What is dlin 1.0?
 
-![A starry night sky.](/public/images/img-dlin-1.0-2023-06.png)
+![A starry night sky.](/images/img-dlin-1.0-2023-06.png)
 
 Starting in May 2023, I have made a conscious effort to prioritise my time and focus on the things that hold personal value to me. I have identified the following areas as significant aspects of my life:
 
