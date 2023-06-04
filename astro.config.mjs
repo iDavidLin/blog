@@ -12,7 +12,6 @@ import tailwind from "@astrojs/tailwind";
   If you don't know your website URL yet, don't worry about this
   and leave it empty or use localhost URL. It won't break anything.
 */
-import netlify from "@astrojs/netlify/functions";
 const SERVER_PORT = 3000;
 // the url to access your blog during local development
 const LOCALHOST_URL = `http://localhost:${SERVER_PORT}`;
@@ -37,7 +36,5 @@ export default defineConfig({
     config: {
       applyBaseStyles: false
     }
-  })],
-  output: "server",
-  adapter: netlify()
+  })]
 });
