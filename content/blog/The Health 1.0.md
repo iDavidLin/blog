@@ -5,6 +5,8 @@ description: Health life is hard.
 date: 2023-06-04
 ---
 
+These are things that help me keep a healthy lifestyle. You don't need me to tell you why they're important.
+
 ## Little things that improve my health
 - New Mattress. (Firm foam) After realising that a soft foam mattress was causing discomfort and low back pain.
 - New Pillow. Inspired by Scott Pape's book "The Barefoot Investor".
