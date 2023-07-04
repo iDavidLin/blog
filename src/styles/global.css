@@ -175,6 +175,9 @@
         color: theme('colors.text.selection');
     }
 
+    .blog-post img {
+        max-height: 600px;
+    }
     /* ------ GLOBAL STYLES - END ------ */
 
     /* ------ REUSABLE UTILS - START ------ */
