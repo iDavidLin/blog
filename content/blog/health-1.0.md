@@ -16,7 +16,8 @@ These are things that help me keep a healthy lifestyle. You don't need me to tel
 ## The workout log
 ### 2023
 ![2023](/images/gym-log-2023.png)
-Total: **141**
+Total: **141**.
+I think I did pretty well in the first hall of 2023.
 #### Happy with the current me
 ![selfie](/images/me-at-2023-06.jpg)
 
