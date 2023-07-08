@@ -16,6 +16,10 @@ These are things that help me keep a healthy lifestyle. You don't need me to tel
 ## The workout log
 ### 2023
 ![2023](/images/gym-log-2023.png)
+
+#### Happy with the process
+![selfie](/images/me-at-2023-06.jpg)
+
 ### 2022
 ![2022](/images/gym-log-2022-12.png)
 
